@@ -8,7 +8,7 @@
       "name": "slop-shield",
       "source": "./",
       "description": "Filter AI slop at write time. Reject unverified completion claims.",
-      "version": "0.3.0"
+      "version": "0.3.1"
     }
   ]
 }
