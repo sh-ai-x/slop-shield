@@ -11,7 +11,7 @@ It enforces a Goal-Lock + verify-before-completion contract, blocks AI-slop phra
 | Asset | Count | Purpose |
 |---|---|---|
 | Iron laws | 5 | Hard gates that cannot be bypassed |
-| Slash commands | 6 | `/verify-loop`, `/plan`, `/market`, `/analyze`, `/build`, `/anti-slop` |
+| Slash commands | 6 | `/verify-loop`, `/plan`, `/market`, `/data`, `/build`, `/anti-slop` |
 | Skills | 7 | Domain-specific verify loops + templates |
 | Agents | 4 | `planner` (opus) · `marketer` · `analyst` · `builder` |
 | Hooks | 10 | Auto gates (slop-detector, verify-gate, security, secrets, rate-limit) |
@@ -69,7 +69,7 @@ Full rules: [CLAUDE.md](./CLAUDE.md).
 |---|---|---|
 | Planning | `/plan` | Wonder → Reflect → Refine → Restate → Approve |
 | Marketing | `/market` | Hypothesis → Audience → Metric → Cutoff → Measure |
-| Data analysis | `/analyze` | Goal → Dataset → EDA → Hypothesis → Model → Verify → Report |
+| Data analysis | `/data` | Goal → Dataset → EDA → Hypothesis → Model → Verify → Report |
 | Development | `/build` | Spec → RED → GREEN → Refactor → Verify |
 
 Each domain has a specialist agent. The harness routes by signal words or asks once via `AskUserQuestion` if unclear.
@@ -128,7 +128,7 @@ verify_loop_engine/
 # → 4-field spec → docs/decisions/<slug>.md → measure → verdict
 
 # 3. Run an analysis
-/analyze
+/data
 # → env (colab|local) → dataset → loop → docs/reports/<goal>.md
 
 # 4. Make a code change

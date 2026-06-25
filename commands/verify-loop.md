@@ -12,6 +12,6 @@ constraint: <do not touch / must respect>
 acceptance: <what is true when done>
 ```
 
-Routes to `/plan` · `/market` · `/analyze` · `/build` based on signals.
+Routes to `/plan` · `/market` · `/data` · `/build` based on signals.
 
 Full rules: see `skills/verify-loop/SKILL.md`.

@@ -42,7 +42,7 @@ When domain is identified, delegate to the specialist skill:
 |---|---|
 | planning | `/plan` |
 | marketing | `/market` |
-| data analysis | `/analyze` |
+| data analysis | `/data` |
 | development | `/build` |
 
 Domain unclear → `AskUserQuestion` once (4-way).

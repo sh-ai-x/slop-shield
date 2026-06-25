@@ -2,7 +2,7 @@
 description: Data analysis verify loop. Goal Lock → Dataset → EDA → Hypothesis → Model → Verify → Report. Reproducible code required.
 ---
 
-# /analyze — Analysis Verify Loop
+# /data — Analysis Verify Loop
 
 For: EDA, model, Kaggle, metric, A/B test, dashboard.
 

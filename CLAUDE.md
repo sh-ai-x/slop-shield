@@ -72,7 +72,7 @@ Hypothesis → Audience → Channel → Metric → Test → Measure → Iterate
 ```
 Goal → Dataset → EDA → Hypothesis → Model → Verify → Report
 ```
-- Entry: `/analyze`
+- Entry: `/data`
 - Env: `scratch/env.md` execution_env (colab|local)
 - Gate: `docs/plans/<goal>.md` approved before model run
 - Output: `docs/reports/<report>.md` (reproducible code + metric + limits)
@@ -96,7 +96,7 @@ Detect the user's domain from request signals:
 |---|---|---|
 | plan · strategy · roadmap · OKR · idea · organize | planning | `/plan` |
 | marketing · content · youtube · campaign · copy · SEO · funnel | marketing | `/market` |
-| data · analysis · EDA · model · kaggle · metric | data | `/analyze` |
+| data · analysis · EDA · model · kaggle · metric | data | `/data` |
 | code · bug · refactor · test · implement · API | dev | `/build` |
 | ambiguous / mixed | AskUserQuestion | — |
 
@@ -133,7 +133,7 @@ Pin 4 fields (hypothesis · audience · metric · cutoff) in `docs/decisions/`.
 
 ### 5.3 Run a data analysis
 ```
-/analyze
+/data
 ```
 Pick env (colab|local) → dataset → analysis loop.
 
