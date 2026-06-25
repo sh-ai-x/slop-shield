@@ -1,0 +1,45 @@
+{
+  "name": "verify-loop-engine",
+  "version": "0.1.0",
+  "description": "Verify loop engineering harness for Claude Code. Filters AI slop, enforces Goal-Lock + verify-before-completion across 4 domains (planning, marketing, data analysis, development). Produces high-quality output with minimum prose.",
+  "author": {
+    "name": "sanghee"
+  },
+  "license": "MIT",
+  "keywords": [
+    "verify-loop",
+    "anti-slop",
+    "lean-output",
+    "iron-law",
+    "tdd",
+    "goal-lock",
+    "planning",
+    "marketing",
+    "data-analysis",
+    "development"
+  ],
+  "commands": [
+    "./commands/verify-loop.md",
+    "./commands/plan.md",
+    "./commands/market.md",
+    "./commands/analyze.md",
+    "./commands/build.md",
+    "./commands/anti-slop.md"
+  ],
+  "agents": [
+    "./agents/planner.md",
+    "./agents/marketer.md",
+    "./agents/analyst.md",
+    "./agents/builder.md"
+  ],
+  "skills": [
+    "./skills/verify-loop",
+    "./skills/plan-guard",
+    "./skills/marketing-verify",
+    "./skills/analysis-verify",
+    "./skills/dev-verify",
+    "./skills/anti-slop-output",
+    "./skills/lean-templates"
+  ],
+  "hooks": "./hooks/hooks.json"
+}

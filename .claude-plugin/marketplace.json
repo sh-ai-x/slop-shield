@@ -1,0 +1,35 @@
+{
+  "name": "verify-loop-engine",
+  "owner": {
+    "name": "sanghee"
+  },
+  "metadata": {
+    "description": "Verify loop engineering plugin for Claude Code. Filters AI slop, enforces Goal-Lock + verify-before-completion across 4 domains.",
+    "version": "0.1.0",
+    "pluginRoot": "."
+  },
+  "plugins": [
+    {
+      "name": "verify-loop-engine",
+      "source": "./",
+      "description": "Iron laws + 4-domain verify loops + slop-detector hooks. Lean output by default.",
+      "version": "0.1.0",
+      "author": {
+        "name": "sanghee"
+      },
+      "license": "MIT",
+      "keywords": [
+        "verify-loop",
+        "anti-slop",
+        "lean-output",
+        "iron-law",
+        "tdd",
+        "goal-lock",
+        "planning",
+        "marketing",
+        "data-analysis",
+        "development"
+      ]
+    }
+  ]
+}
