@@ -12,5 +12,8 @@
     "iron-law",
     "verify"
   ],
+  "commands": [
+    "./commands/slop-scan.md"
+  ],
   "hooks": "./hooks/hooks.json"
 }

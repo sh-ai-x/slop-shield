@@ -15,14 +15,15 @@ claude plugin install slop-shield
 
 ## What it does
 
-Two hooks, run automatically:
+Two hooks (auto) + one command (manual):
 
-| Hook | When | Action |
+| Component | When | Action |
 |---|---|---|
-| `slop-detector` | Write / Edit | Flags banned phrases (`delve into`, `leverage`, `comprehensive`, ...) |
-| `verify-gate` | Stop | Flags completion claims without quoted test output |
+| `slop-detector` hook | Write / Edit | Flags banned phrases (`delve into`, `leverage`, ...) |
+| `verify-gate` hook | Stop | Flags completion claims without quoted test output |
+| `/slop-scan [path]` | Manual | Bulk audit — ranks files by slop count |
 
-Both print to stderr. Neither blocks. You decide whether to act.
+Hooks print to stderr; they don't block. `/slop-scan` reports existing slop in a directory.
 
 ## Layout
 
@@ -31,6 +32,7 @@ slop-shield/
 ├── .claude-plugin/plugin.json   # Manifest
 ├── CLAUDE.md                    # Iron laws (3) — auto-loaded
 ├── README.md
+├── commands/slop-scan.md        # /slop-scan
 └── hooks/
     ├── hooks.json
     ├── slop-detector.sh
